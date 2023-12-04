@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alice', serif;
+}
+.submenu{
+    display: none;
+
+}
+.menu:hover .submenu{
+    display:inline-block;
+    position:absolute;
+    background-image: url(Pictures/pic6.jpg); 
+    background: transparent;
+    backdrop-filter: blur(5px);
+    margin-top: 15px; 
+}
+.menu:hover .submenu ul{
+    display: block;
+    margin: 10px;
+}
+.menu:hover .submenu ul{
+    width: 100px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu:hover .submenu ul li a{
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    color: honeydew;
+    font-size: 13px;
+}  
+.icon{
+    width: 20px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Pictures/pic3.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+   color: honeydew;
+    font-size: 13px;
+    text-decoration: none;
+}
+.nav ul li a::after{
+  content: ''; 
+  position:absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  transform: scaleX(0);
+transition: transform .5s;
+text-decoration: underline;
+color: honeydew;
+}
+
+.nav ul li a:hover:after{
+    transform: scaleX(1);
+    text-decoration: underline;
+}
+.row{
+    display: flex;
+    height:80%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: rgb(188, 108, 10);
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+p{
+    color: #fff;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: justify;
+}
+button{
+    width: 180px;
+    color: #000000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: hotpink;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.card{
+    width: 230px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(Pictures/pic1.jpg); 
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+.card2{
+    background-image: url(Pictures/graphic1.jpg); 
+    
+}
+.card3{
+    background-image: url(Pictures/graphic2.jpg); 
+   
+}
+.card4{
+    background-image: url(Pictures/pic6.jpg); 
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: rgb(242, 245, 18);
+    text-shadow: 0 0 5px #999;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+}
+.card p{
+    text-shadow: 0 0 5px #999;
+    font-size: 10px;
+    text-align: justify;
+}
+footer {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Pictures/people.jpg);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+    color: honeydew;
+  }

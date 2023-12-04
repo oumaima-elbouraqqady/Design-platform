@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alice', serif;
+}
+.submenu{
+    display: none;
+
+}
+.menu:hover .submenu{
+    display:inline-block;
+    position:absolute;
+    background-image: url(Pictures/pic6.jpg); 
+    background: transparent;
+    backdrop-filter: blur(5px);
+    margin-top: 15px; 
+}
+.menu:hover .submenu ul{
+    display: inline-block;
+    margin: 10px;
+}
+.menu:hover .submenu ul{
+    width: 100px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 10px;
+    text-align: left;
+}
+.menu:hover .submenu ul li a{
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 10px;
+    text-align: left;
+    color: honeydew;
+    font-size: 13px;
+}  
+.icon{
+    width: 20px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Pictures/pic3.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+   color: honeydew;
+    font-size: 13px;
+    text-decoration: none;
+}
+.nav ul li a::after{
+  content: ''; 
+  position:absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  transform: scaleX(0);
+transition: transform .5s;
+text-decoration: underline;
+color: honeydew;
+}
+
+.nav ul li a:hover:after{
+    transform: scaleX(1);
+    text-decoration: underline;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: bisque;
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+p{
+    color: #fff;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: justify;
+}
+button{
+    width: 180px;
+    color: #000000;
+    font-size: 14px;
+    padding: 12px 0;
+    background: hotpink;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    justify-content: center;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    overflow: hidden;
+}
+.card1{
+    background-image: url(Pictures/pic1.jpg); 
+}
+.card2{
+    background-image: url(Pictures/marketing-strategy-planning-strategy-concept.jpg); 
+}
+.card3{
+    background-image: url(Pictures/pic4.jpg); 
+}
+.card4{
+    background-image: url(Pictures/pic6.jpg); 
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: aqua;
+    text-shadow: 0 0 5px #999;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Dancing Script', cursive;
+}
+.card p{
+    text-shadow: 0 0 5px #e8d5d5;
+    font-size: 11px;
+}
+
+  .card_data{
+    width:100px;
+    background-color: aqua;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left:0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+  }
+  .card_description{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: .25rem;
+  }
+  .card_title{
+    font-size: var(--h2-font-size);
+    font-weight: 80;
+    color: bisque;
+    margin-bottom: .75rem;
+  }
+  .card_button{
+    text-decoration: none;
+    font-size: var(--small-font-size);
+    font-weight: 80;
+    text-align: center;
+    color: aquamarine;
+  }
+  .card_button:hover{
+    text-decoration: underline;
+  }
+  .card:hover .card_data{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+  }
+.card{
+    animation: remove-overflow 2s forwards;
+}
+
+@keyframes show-data{
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(-7rem);
+    }
+}
+@keyframes remove-overflow{
+    to{
+        overflow: initial;
+    }
+}

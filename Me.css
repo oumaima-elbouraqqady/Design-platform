@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alice', serif;
+}
+.submenu{
+    display: none;
+
+}
+.menu:hover .submenu{
+    display:inline-block;
+    position:absolute;
+    background-image: url(Pictures/pic6.jpg); 
+    background: transparent;
+    backdrop-filter: blur(5px);
+    margin-top: 15px; 
+}
+.menu:hover .submenu ul{
+    display: inline-block;
+    margin: 10px;
+}
+.menu:hover .submenu ul{
+    width: 100px;
+    padding: 10px;
+    
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu:hover .submenu ul li a{
+    width: 150px;
+    padding: 10px;
+   
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    color: honeydew;
+    font-size: 13px;
+} 
+.icon{
+    width: 20px;
+    cursor: pointer;
+    margin-left: 40px;
+} 
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Pictures/me.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+
+}
+nav ul li a{
+    text-decoration: none;
+   color: rgb(253, 253, 253);
+    font-size: 14px;
+}
+.nav ul li a::after{
+  content: ''; 
+  position:absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  transform: scaleX(0);
+transition: transform .5s;
+text-decoration: underline;
+}
+
+.nav ul li a:hover:after{
+    transform: scaleX(1);
+    text-decoration: underline;
+}
+.row{
+    display: flex;
+    height:60%;
+    align-items: center;
+}
+.row1{
+    display: flex;
+    height: 20%;
+    align-items: center;
+}
+.col{
+    flex-basis: 80%;
+}
+h1{
+    color: rgb(218, 40, 182);
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+h2{
+    color: rgb(218, 40, 182);
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+p{
+    color: #fff;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: justify;
+}
+button{
+    width: 180px;
+    color: #000000;
+    font-size: 14px;
+    padding: 12px 0;
+    background: hotpink;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+.card{
+    width: 130px;
+    height: 160px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(Pictures/me1.jpg); 
+}
+.card2{
+    background-image: url(Pictures/me2.jpg); 
+}
+.card3{
+    background-image: url(Pictures/me4.jpg); 
+}
+.card4{
+    background-image: url(Pictures/me9.png); 
+}
+.card5{
+    background-image: url(Pictures/me5.jpg); 
+}
+.card6{
+    background-image: url(Pictures/me6.jpg); 
+}
+.card7{
+    background-image: url(Pictures/me7.jpg); 
+}
+.card8{
+    background-image: url(Pictures/me8.jpg); 
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: aqua;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 5px #999;
+    font-size: 8px;
+}
+footer {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Pictures/people.jpg);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+    color: honeydew;
+  }
+  .card_data{
+    width:60px;
+    background-image: url(Pictures/p1.jpg); 
+    background: transparent;
+    backdrop-filter: blur(5px);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left:0;
+    right: 0;
+    color: aquamarine;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+  }
+  .card_description{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: .25rem;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 10px;
+  }
+  .card_title{
+    font-size: var(--h2-font-size);
+    font-family: 'Dancing Script', cursive;
+    font-weight: 40;
+    font-size: 10px;
+    text-align: center;
+    color: rgb(224, 85, 178);
+    margin-bottom: .75rem;
+  }
+  .card_button{
+    text-decoration: none;
+    font-size: var(--small-font-size);
+    font-weight: 80;
+    text-align: center;
+    color: rgb(21, 157, 192);
+  }
+  .card_button:hover{
+    text-decoration: underline;
+  }
+  .card:hover .card_data{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+  }
+.card{
+    animation: remove-overflow 2s forwards;
+}
+
+@keyframes show-data{
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(-7rem);
+    }
+}
+@keyframes remove-overflow{
+    to{
+        overflow: initial;
+    }
+}
